@@ -7,6 +7,7 @@ interface Project {
   live?: string;
   github?: string;
   image?: string;
+  portfolio?: string;
 }
 
 export default function Projects() {
@@ -33,6 +34,8 @@ export default function Projects() {
         "A hair stylist booking platform where professionals set up their page and manage their calendar availability. Clients can browse stylists and book appointments based on the stylist's provided schedule.",
       tags: ["Next.js", "Node.js", "MongoDB", "Express", "TailwindCSS"],
       image: "/mapage-stylist1.png",
+      portfolio: "https://shellbeehaken.com/portfolio/3",
+      live: "https://introduction.mapage.net/"
     },
     {
       title: "Mapage — User App",
@@ -40,6 +43,8 @@ export default function Projects() {
         "The customer-facing side of Mapage where users discover nearby hair stylists, view available time slots, and book appointments seamlessly.",
       tags: ["Next.js", "React", "TypeScript", "TailwindCSS"],
       image: "/mapage-user2.png",
+      portfolio: "https://shellbeehaken.com/portfolio/2",
+      live: "https://mapage.net/"
     },
     {
       title: "Mapage — E-Commerce",
@@ -47,6 +52,8 @@ export default function Projects() {
         "An e-commerce extension of Mapage where hair stylists can list and sell their professional products, and users can browse and purchase them directly.",
       tags: ["Next.js", "Stripe", "MongoDB", "Node.js"],
       image: "/mapage-ec2.png",
+      portfolio: "https://shellbeehaken.com/portfolio/1",
+      live: "https://mapage.net/"
     },
     {
       title: "Mapage Space",
@@ -54,6 +61,8 @@ export default function Projects() {
         "A salon management platform where multiple hair stylists can collectively offer their services to customers, manage bookings, and coordinate schedules within a shared salon space.",
       tags: ["Next.js", "Node.js", "MongoDB", "TailwindCSS"],
       image: "/mapage-space1.png",
+      portfolio: "https://shellbeehaken.com/portfolio/4",
+      live: "https://mapage.net/"
     },
     {
       title: "UUORK",
@@ -61,6 +70,8 @@ export default function Projects() {
         "A virtual company management platform that brings talents across the globe to create remote project teams. Designed to increase operational efficiency with seamless project tracking, workflow management, and team collaboration tools.",
       tags: ["React", "TypeScript", "Node.js", "MongoDB", "AWS", "Socket.IO"],
       image: "/uuork1.png",
+      live: "https://uuork.de",
+      portfolio: "https://shellbeehaken.com/portfolio/8",
     },
   ];
 
@@ -105,6 +116,11 @@ export default function Projects() {
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                       🔗 Source Code
+                    </a>
+                  )}
+                  {project.portfolio && (
+                    <a href={project.portfolio} target="_blank" rel="noopener noreferrer" className="project-link">
+                      🔗 Portfolio
                     </a>
                   )}
                   {project.live && (
