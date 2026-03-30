@@ -22,8 +22,8 @@ export default function Hero() {
           </p>
           <div className="hero-actions">
             <a
-              href="/Mohammed_Mazhar_Ali_Shawon_CV.pdf"
-              download
+              href="https://drive.google.com/file/d/1Y0aJIXmHHyJjOlhu9s-NDIqzHOAuWguD/view?usp=drive_link"
+              target="_blank"
               className="btn btn-primary"
             >
               📄 Download CV
